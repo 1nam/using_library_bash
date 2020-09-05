@@ -1,4 +1,5 @@
 #!/bin/bash
+# this is assuming you are just starting to script use diff concepts play around with code.
 # notice that bash is case sensitive
 # use capitol A-Z in this script
 # using lower case on this script a-z echos nothing.
@@ -33,20 +34,23 @@ X='Xerus'
 Y='Yak'
 Z='Zebra'
 #**********this is for next scripter Copy&Paste for using Library*********#
+
 # $A $B $C $D $E $F $G $H $I $J $K $L $M $N $O $P $Q $R $S $T $U $V $W $X $Y $Z
 
 #***********FUNCTIONS*********#
-function_one ()
-{
- echo $Z "upper case Z"
- echo "notice lower case does not say Zebra"
- echo $z "lower case z"
-}
-function_two ()
-{
- echo "important in bash scripting it's case sensitive"
- echo 'press enter to end process.'
- read
-}
+# hash tag also used for bash header like a shebang #!/bin/bash
+# hash tag symbol is used  hidding text and telling other scripters about to scripts code. 
+function_one () #start function 1
+{ # open bracket
+ echo $Z "upper case Z" # the $Z # prints String of text from library
+ echo "notice lower case does not say Zebra" # prints String of text
+ echo $z "lower case z" # the $z # does not print String of text from library becouse lower case.
+} # close bracket
+function_two () #start function 2
+{ # open bracket
+ echo "important in bash scripting it's case sensitive" # prints String of text
+ echo 'press enter to end process.' # prints String of text
+ read  # get user input
+} # close bracke
 function_one #close
 function_two #close
